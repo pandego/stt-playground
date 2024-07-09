@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "whisper-playground"
+version = "0.1.0"
+description = ""
+authors = ["Miguel Dias <miguel.dias@acc-emotion.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ipykernel = "^6.29.5"
+groq = "^0.9.0"
+python-dotenv = "^1.0.1"
+rich = "^13.7.1"
+torch = "^2.3.1"
+transformers = "^4.42.3"
+datasets = "^2.20.0"
+accelerate = "^0.32.1"
+librosa = "^0.10.2.post1"
+soundfile = "^0.12.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
