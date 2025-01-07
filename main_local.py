@@ -28,8 +28,7 @@ model_id = "openai/whisper-large-v3"
 # --- Load audio file --- #
 # ----------------------- #
 
-# filename = os.path.dirname(__file__) + "/sample_audio.m4a"
-filename = "recordings/20240709_David_S/20240709_interview_ai_tech_lead_David_S_16000.wav"
+filename = os.path.dirname(__file__) + "/sample_audio.m4a"
 
 # ------------------------------- #
 # --- Load model and pipeline --- #
