@@ -21,8 +21,7 @@ temperature=0.0
 # --- Load audio file --- #
 # ----------------------- #
 
-# filename = os.path.dirname(__file__) + "/sample_audio.m4a"
-filename = "recordings/20240709_David_S/20240709_interview_ai_tech_lead_David_S_8000.m4a"
+filename = os.path.dirname(__file__) + "/sample_audio.m4a"
 
 # ------------------------------------ #
 # --- Translate audio file to text --- #
@@ -53,7 +52,7 @@ if transcribe:
       transcription  = client.audio.transcriptions.create(
         file=(filename, file.read()),
         model=model,
-        # prompt=prompt,                    # Optional
+        # prompt=prompt,                  # Optional
         response_format=response_format,  # Optional
         language=language,                # Optional
         temperature=0.0,                  # Optional
